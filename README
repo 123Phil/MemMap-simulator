@@ -1,0 +1,37 @@
+ CPSC 351, Operating Systems
+Project 2
+Phillip Stewart
+
+
+This project is a memory-map simulator contained in a single .c file.
+To compile:
+  ~$ gcc main.c
+
+
+
+Here is a sample run:
+
+ ~$ gcc main.c -o mmap
+ ~$ ./mmap
+Memory size>2000
+Page Size (1:100, 2:200, 3:400)>1
+Input file: in.txt
+Simulation completed.
+ ~$ ./mmap
+Memory size>3000
+Page Size (1:100, 2:200, 3:400)>2
+Input file: in.txt
+Simulation completed.
+ ~$ ./mmap
+Memory size>4000
+Page Size (1:100, 2:200, 3:400)>3
+Input file: in.txt
+Simulation completed.
+
+The 'in.txt' used for these runs and the output files 'out1.txt', 'out2.txt',
+and 'out3.txt' produced by these runs have been included in the project.
+
+As stipulated in the project outline, memory size up to 30000 is supported.
+The simulation runs until all processes have completed or up to 100000 seconds,
+whichever comes first.
+The program assumes that 'Memory size' is a multiple of 'Page Size'.
